@@ -1,0 +1,120 @@
+<?php 
+	// require('blog_connect.php'); 
+	// include('cek_logged.inc');
+	// require('debug_isLogged.inc');
+?>
+<html> 
+<head>
+	<title>Ojek Online - Order</title>
+	
+	<link type="text/css" rel="stylesheet" href="reset.css">
+	<!--<link type="text/css" rel="stylesheet" href="main.css">
+	-->
+	
+</head>
+<body>
+	
+	<div id="head">
+		<div id="header">
+			<h1 class="header"><span style="color:#1D7430;">PR</span>-<span style="color:#D50027;">OJEK</span></h1>
+			<h4 class="header"><span style="color:#85A158;">wush... wush... ngeeeeeeng...</span></h4>
+		</div>
+
+		<div id="user">
+			<h3 class="hi">Hi, <b>Royyan</b> !</h3>
+			<h4 class="logout"><a href="#">Logout</a></h4>
+		</div>
+	</div>
+	
+	<?php
+
+	// include('navbar.html');
+	// include('main.html');
+
+	?>
+
+	<div class="nav">
+		<div class="navbar">
+			<button class="navlinks" onclick="navChange(event, 1)" id="tab_default">Profile
+			</button><button class="navlinks" onclick="navChange(event, 2)">Order
+			</button><button class="navlinks" onclick="navChange(event, 3)">History
+		</div>
+	</div>
+
+	<div id="main">	
+
+
+			<h1>MAKE AN ORDER</h1>
+
+			<div class="tab">
+				<button class="tablinks active" onclick="tabChange(event, 1)" id="tab_default"><span class="num-circle">1.</span> Select Destination
+				</button><button class="tablinks" onclick="tabChange(event, 2)"><span class="num-circle">2.</span> Select a Driver
+				</button><button class="tablinks" onclick="tabChange(event, 3)"><span class="num-circle">3.</span> Complete your Order</button>
+			</div>
+
+			<!-- FORM ISIAN -->
+			<form action="dest.php" method="post" id="setor">
+				<div id="order-1" class="tabcontent" style="display:block;">
+					
+					Picking Point <input type="text" value="" name="submit" /><br />
+					Destination <input type="text" value="" name="submit" /><br />
+					Preferred Location <input type="text" value="" name="submit" /><br />
+					
+					<input type="button" onclick="tabChange(event, 2)" value="Next" />
+					
+				</div>
+				<div id="order-2" class="tabcontent">
+					<div class="">
+						<H2>PREFERRED DRIVERS:</H2>
+
+						<!-- DRIVER BERULANG -->
+
+					</div>
+					<div class="">
+						<H2>OTHER DRIVERS:</H2>
+
+						<div class="driver">
+
+							<!-- DRIVER BERULANG -->
+							<div class="choose-driver">
+								<div>
+									<img src="" />
+								</div>
+								<div>
+									<h3>Bulbasaurus</h3>
+									<img src="" /><span class="rating">1.2</span> (10 votes)<br />
+									<button class="choose-btn">I choose you!</button>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<input type="button" onclick="tabChange(event, 3)" value="Next" />
+				</div>
+				<div id="order-3" class="tabcontent">
+					<div class="">
+						<H2>HOW WAS IT?</H2>
+
+						<div class="driver-show">
+							<img class="driver-img" src="" />
+							<h4 class="driver-name">@Bombratata</h4>
+							<p class="driver-desc">Bombratata</p>
+							<textarea rows="" cols="" name="driver-comment" form=""></textarea>
+
+						</div>
+					</div>
+
+					<input type="submit" value="Complete Order" />
+				</div>
+			</form>
+
+		</div>
+		<div id="nav-3" class="navmain">
+			<h3>Judul 2</h3>
+		</div>
+
+	</div>
+</body>
+</html>

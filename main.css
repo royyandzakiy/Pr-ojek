@@ -1,0 +1,100 @@
+body {
+		text-align: left;
+	}
+
+	div#head {
+		margin: 0px auto;
+		display: block;
+		max-width: 700px;
+		padding: 20px;
+	}
+			div#header {
+				max-width:50%;
+				display: inline-block;
+				text-align: left;
+			}
+
+			div#user {
+				max-width:50%;
+				float: right;
+				text-align: right;
+			}
+
+	div.nav {
+		overflow: hidden;
+		display: block;
+		background-color: #f4f4f4;
+	}
+
+			div.navbar {
+				margin: 0px auto;
+				display: block;
+				max-width: 700px;
+			}
+
+					div.navbar button:hover {
+						background-color: rgba(0,0,0,.2);
+					}
+
+					div.navbar button.active {
+						background-color: #465D43;
+						color: white;
+					}
+
+					button.navlinks {
+						max-width:500px;
+					}
+
+	div.tab button, div.navbar button {
+		background-color: #f4f4f4;
+		display: inline-block;
+		width: 33.332%;
+		border:none;
+		outline:none;
+		cursor:pointer;
+		margin: 0;
+		padding:20px;
+	}
+
+	span.num-circle {
+		background-color: #f4f4f4;
+		border-radius: 100px;
+		padding: 15px;
+		float: left;
+	}
+
+	div.tab {
+		max-width: 700px;
+		text-align: center;
+		margin: 30px;
+	}
+
+			div.tab button {
+				margin: 0px 5px;
+				max-width: 170px;
+				padding: 10px;
+				color: #4B4B4B;
+				background-color: white;
+				display: inline-block;
+				border: 1px solid black;
+			}			
+
+					div.tab button:hover {
+						background-color: #f2f2f2;
+					}		
+
+					div.tab button.active {
+						background-color: #FFFE9F;
+					}
+
+	.tabcontent {
+		display:none;
+	}
+
+	#main {
+		display: block;
+		margin: 0px auto;
+		max-width: 700px;
+		border:1px solid #000;
+		padding: 20px;
+	}
